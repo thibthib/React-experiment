@@ -3,7 +3,21 @@
     color: #555;
 }
 
-.Hotel-title {
+.Hotel {
   font-family: 'Open Sans', sans-serif;
+}
+
+.Hotel-name {
   color: #555;
+  margin-bottom: 0;
+}
+
+.Hotel-address,
+.Hotel-review {
+  font-size: 16px;
+  color: #90a4ae;
+}
+
+.Hotel-review:before {
+  content: ' - ';
 }

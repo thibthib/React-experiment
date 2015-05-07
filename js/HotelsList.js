@@ -27,7 +27,7 @@ var HotelsList = React.createClass({
   render: function() {
     var hotelsNodes = this.state.hotels.map(function (hotel) {
       return (
-        <h2 className="Hotel-title">{hotel.label}</h2>
+        <Hotel label={hotel.label} address={hotel.location.address} review={hotel.review.average}/>
       );
     });
     return (
