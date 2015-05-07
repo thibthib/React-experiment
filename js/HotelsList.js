@@ -32,7 +32,7 @@ var HotelsList = React.createClass({
     });
     return (
       <div className="HotelsList">
-        <h1 className="HotelsList-title">Hello ! I am listing {this.state.hotels.length} hotels.</h1>
+        <h1 className="HotelsList-title">Hello ! I am listing {this.state.hotels.length} hotels and their weekends using React.js.</h1>
         {hotelsNodes}
       </div>
     );

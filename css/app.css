@@ -5,13 +5,15 @@
   box-sizing: border-box;
 }
 
-.HotelsList-title {
-    font-family: 'Montserrat', sans-serif;
-    color: #555;
+body {
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.Hotel {
-  font-family: 'Open Sans', sans-serif;
+.HotelsList-title {
+    color: #555;
+    padding-bottom: 28px;
+    font-weight: bold;
 }
 
 .Hotel-name {
