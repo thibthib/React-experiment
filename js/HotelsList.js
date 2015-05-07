@@ -40,6 +40,6 @@ var HotelsList = React.createClass({
 });
 
 React.render(
-  <HotelsList url="http://hotels.thibaut.io"/>,
+  <HotelsList url="http://api.weekendesk.com/api/weekends.json?orderBy=priceQuality&locale=fr_FR&limit=50&page=0"/>,
   document.getElementById('hotelsList')
 );
