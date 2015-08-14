@@ -10,30 +10,25 @@ var HotelsList = React.createClass({
           console.error(hotelsList.props.url, request.status);
         }
       }
-    }
-
+    };
     request.open("GET", this.props.url, true);
     request.send();
   },
-
   getInitialState: function() {
     return { hotels: [] };
   },
-
   componentDidMount: function() {
     this.loadHotels();
   },
-
   render: function() {
-    var hotelsNodes = this.state.hotels.map(function (hotel) {
-      return (
-        <Hotel data={hotel} />
-      );
-    });
+    var createHotel = function (hotel) {
+      return <Hotel data={hotel} />;
+    };
+
     return (
       <div className="HotelsList">
         <h1 className="HotelsList-title">Hello ! I am listing {this.state.hotels.length} hotels and their weekends using React.js.</h1>
-        {hotelsNodes}
+        { this.state.hotels.map(createHotel) }
       </div>
     );
   }
