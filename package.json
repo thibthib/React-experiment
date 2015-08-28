@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "webpack-dev-server",
-    "compile": "webpack"
+    "compile": "webpack -p"
   },
   "name": "react-experiment",
   "version": "1.0.1",
