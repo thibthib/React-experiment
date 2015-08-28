@@ -1,3 +1,6 @@
+var React = require('react');
+var Hotel = require('./Hotel.jsx');
+
 var HotelsList = React.createClass({
   loadHotels: function() {
     var hotelsList = this;

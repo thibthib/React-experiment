@@ -1,3 +1,6 @@
+var React = require('react');
+var Weekend = require('./Weekend.jsx');
+
 var Hotel = React.createClass({
   render: function() {
     var createWeekend = function(weekend, index) {
@@ -14,3 +17,5 @@ var Hotel = React.createClass({
     );
   }
 });
+
+module.exports = Hotel;

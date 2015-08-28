@@ -21,3 +21,5 @@ var Weekend = React.createClass({
     );
   }
 });
+
+module.exports = Weekend;

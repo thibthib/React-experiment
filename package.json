@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "compile": "webpack"
+  },
+  "name": "react-experiment",
+  "version": "1.0.1",
+  "dependencies": {
+    "react": "~0.13.3"
+  },
+  "devDependencies": {
+    "http-server": "^0.8.0",
+    "jsx-loader": "~0.13.2",
+    "webpack": "~1.12.0",
+    "webpack-dev-server": "~1.10.1"
+  }
+}
