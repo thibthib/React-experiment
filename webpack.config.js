@@ -4,6 +4,7 @@ module.exports = {
   },
   output: {
     path: './assets',
+    publicPath: 'assets',
     filename: 'bundle.js'
   },
   externals: {
