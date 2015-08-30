@@ -1,3 +1,5 @@
+require("../css/Hotel.css");
+
 var React = require('react');
 var Weekend = require('./Weekend.jsx');
 

@@ -1,3 +1,5 @@
+require("../css/HotelsList.css");
+
 var React = require('react');
 var Hotel = require('./Hotel.jsx');
 

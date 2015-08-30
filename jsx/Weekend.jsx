@@ -1,3 +1,5 @@
+require("../css/Weekend.css");
+
 var Weekend = React.createClass({
   getInitialState: function() {
     return { selected: false };
