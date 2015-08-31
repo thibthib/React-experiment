@@ -1,0 +1,12 @@
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+}

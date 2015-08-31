@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    app: ['./jsx/HotelsList.jsx']
+    app: ['./js/App.js']
   },
   output: {
     path: './assets',
@@ -12,6 +12,7 @@ module.exports = {
   },
   module: {
     loaders: [
+      { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.jsx$/, exclude: /node_modules/, loader: 'babel-loader'},
       { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
