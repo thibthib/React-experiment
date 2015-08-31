@@ -1,9 +1,9 @@
-import "../css/Hotel.css";
+import '../css/Hotel.css';
 
 import React from 'react';
 import Weekend from './Weekend';
 
-export class Hotel extends React.Component {
+export default class Hotel extends React.Component {
   render() {
     return (
       <div className="Hotel">
