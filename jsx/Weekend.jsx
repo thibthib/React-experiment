@@ -1,27 +1,25 @@
-require("../css/Weekend.css");
+import React from 'react';
+import '../css/Weekend.css';
 
-var Weekend = React.createClass({
-  getInitialState: function() {
-    return { selected: false };
-  },
-  onClick: function() {
+export default class Weekend extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { selected: false };
+  }
+  onClick() {
     this.setState({ selected: !this.state.selected });
-  },
-  render: function() {
-    var createTheme = function(theme, index) {
-      return <span className="Weekend-theme">{theme}</span>;
-    };
-  
+  }
+  render() {
     return (
-      <div className={ 'Weekend' + (this.state.selected ? ' is-selected' : '') } onClick={this.onClick}>
-        <img className="Weekend-image" src={this.props.data.imageUrl}/>
+      <div className={ 'Weekend' + (this.state.selected ? ' is-selected' : '') } onClick={this.onClick.bind(this)}>
+        <img className="Weekend-image" src={this.props.imageUrl}/>
         <div className="Weekend-infos">
-          <div className="Weekend-label">{this.props.data.label}</div>
-          <div className="Weekend-themes">{this.props.data.topTheme && this.props.data.topTheme.map(createTheme)}</div>
+          <div className="Weekend-label">{this.props.label}</div>
+          <div className="Weekend-themes">
+            {this.props.topTheme && this.props.topTheme.map(theme => <span className="Weekend-theme">{theme}</span>)}
+          </div>
         </div>
       </div>
     );
   }
-});
-
-module.exports = Weekend;
+};
